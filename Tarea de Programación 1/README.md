@@ -49,7 +49,7 @@
 
 Se diseñó e implementó el siguiente algoritmo:
 
-| ![](imgs/1B_Check-MST.png)
+![](imgs/1B_Check-MST.png)
 
 El algoritmo en la **Fase Adivinadora** se encarga de contstruir un árbol a partir de *G* con el hecho de qué como *G* es conexa, entonces si nuestro árbol posee *n-1* aristas nos va a asegurar que efectivamente es un árbol. Utilizamos la *nd-choice* cómo un 
 dado con el mismo número de caras que de aristas de *G*, también vamos añadiendo las  *j-ésimas* aristas a nuestro árbol y obteniendo sus respectivos pesos. En la **Fase Verificadora** sólo calculamos si la cota de los pesos de las aristas de nuestro árbol es correcta.
@@ -60,14 +60,14 @@ La implementación en `Java` la hacemos con *Listas* en vez de utilizar conjunto
 
 Un ejemplo de una ejecución es sí ejecutamos el programa con la gráfica que se presenta en el archivo `Petersen1B.txt`, que representa la gráfica de **Petersen** con pesos:
 
-| ![](imgs/Petersen1B.png)
+![](imgs/Petersen1B.png)
 
 Se puede obtener la siguiente respuesta:
 
-| ![](imgs/Ejecucion1B.png)
+ ![](imgs/Ejecucion1B.png)
 
 Qué gráficamente se ve así:
 
-| ![](imgs/Resp1B.png)
+![](imgs/Resp1B.png)
 
 [liga-tarea-1]: https://drive.google.com/file/d/15_h4eiy3C7Lm3rZvhgLwII_2mo3zgwoL/view
