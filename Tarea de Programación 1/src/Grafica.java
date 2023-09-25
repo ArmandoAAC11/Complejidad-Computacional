@@ -9,6 +9,7 @@ class Grafica {
 
     int V;     //Vertices de la grafica
     List<Arista> aristas; //Aristas de la gráfica
+    ArrayList<Integer> vertices;  // Vertices de la gráfica
 
     /**
      * Constructor para las gráficas
@@ -17,6 +18,7 @@ class Grafica {
     public Grafica(int V) {
         this.V = V;
         aristas = new ArrayList<>();
+        vertices = new ArrayList<>();
     }
 
     /**
@@ -31,6 +33,16 @@ class Grafica {
     }
 
     /**
+     * Metodo que agrega aristas a la grafica
+     * @param  u Extremo de la arista
+     * @param v Otro extremo de la arista
+     * */
+    public void agregarArista(int u, int v) {
+        Arista arista = new Arista(u, v);
+        aristas.add(arista);
+    }
+
+    /**
      * Para obtener la lista de arista
      * @return La lista con las aristas;
      * */
@@ -38,6 +50,21 @@ class Grafica {
         return aristas;
     }
 
+    /**
+     * Metodo que agrega vertices a la grafica
+     * @param v Vertice de la gráfica
+     * */
+    public void agregarVertice(int v) {
+        vertices.add(v);
+    }
+
+    /**
+     * Para obtener la lista de vertices
+     * @return La lista con los vertices
+     * */
+    public  List<Integer> getVertices(){
+        return vertices;
+    }
 }
 
 /**
@@ -56,6 +83,11 @@ class Arista implements Comparable<Arista> {
         this.u = u;
         this.v = v;
         this.peso = peso;
+    }
+
+    public Arista(int u, int v) {
+        this.u = u;
+        this.v = v;
     }
 
     /**
