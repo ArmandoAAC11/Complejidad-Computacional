@@ -14,13 +14,13 @@
    - Problema Set Covering:
       ```bash
       javac SetCovering.java
-      java main
+      java SetCovering
       ```
 
    - Problema Subset Sum:
       ```bash
       javac SubsetSum.java
-      java main
+      java SubsetSum
       ```
 
 ### Observaciones:
